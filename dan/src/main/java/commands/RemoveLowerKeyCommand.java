@@ -15,7 +15,12 @@ public class RemoveLowerKeyCommand implements Command {
             result.writeResult("Данная команда должна содержать аргумент. Запрос не будет исполнен");
             return;
         }
-        result.writeResult(hashMapWrapper.removeLowerKey(Long.parseLong(options)));
+        try {
+            result.writeResult(hashMapWrapper.removeLowerKey(Long.parseLong(options)));
+        } catch (NumberFormatException ex){
+            result.writeResult("поступил неверный формат. Запрос не будет исполнен");
+        }
+
 
     }
 }

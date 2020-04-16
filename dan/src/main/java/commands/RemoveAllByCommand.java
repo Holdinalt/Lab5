@@ -15,6 +15,12 @@ public class RemoveAllByCommand implements Command {
             result.writeResult("Данная команда должна содержать аргумент. Запрос не будет исполнен");
             return;
         }
-        result.writeResult(hashMapWrapper.removeBySBE(Integer.parseInt(options)));
+        try {
+
+            result.writeResult(hashMapWrapper.removeBySBE(Integer.parseInt(options)));
+        } catch (NumberFormatException ec){
+            result.writeResult("поступил неверный аргумент. Команда не будет исполнена");
+        }
+
     }
 }

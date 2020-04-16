@@ -15,7 +15,7 @@ public class ControlUnit {
         commandMap.put(name,command);
     }
     public void saveHistory(String command){
-        if( history.size() > 5){
+        if( history.size() >= 5){
             history.remove(0);
         }
         history.add(command);

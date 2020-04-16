@@ -16,7 +16,12 @@ public class RemoveCommand implements Command {
             result.writeResult("Данная команда должна содержать аргумент. Запрос не будет исполнен");
             return;
         }
-        result.writeResult(hashMapWrapper.removeElement(Long.parseLong(options)));
+        try {
+
+            result.writeResult(hashMapWrapper.removeElement(Long.parseLong(options)));
+        } catch (NumberFormatException ec){
+            result.writeResult("поступил неверный аргумент. Команда не будет исполнена");
+        }
 
     }
 }

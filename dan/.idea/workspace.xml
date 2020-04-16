@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c52732ca-54e8-4b9b-a3c9-70641b4119fa" name="Default Changelist" comment="" />
+    <list default="true" id="c52732ca-54e8-4b9b-a3c9-70641b4119fa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/mainApp/CommandLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SaveFile" beforeDir="false" afterPath="$PROJECT_DIR$/SaveFile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Script" beforeDir="false" afterPath="$PROJECT_DIR$/Script" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/collectionWorker/HashMapWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/collectionWorker/HashMapWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commands/ControlUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/ControlUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commands/ExecuteScriptCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/ExecuteScriptCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commands/LoadCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/LoadCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commands/RemoveAllByCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/RemoveAllByCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commands/RemoveCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/RemoveCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commands/RemoveLowerKeyCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/RemoveLowerKeyCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commands/ScriptAddCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/ScriptAddCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/factories/StudyGroupFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factories/StudyGroupFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fileWorker/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fileWorker/FileManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainApp/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainApp/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainApp/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainApp/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sourseDate/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sourseDate/Person.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +34,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -24,6 +45,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1aOVMEuhbd8W62EPTY7XOobqIpc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -67,6 +89,8 @@
       <updated>1586606576487</updated>
       <workItem from="1586606583231" duration="3016000" />
       <workItem from="1586703408069" duration="20145000" />
+      <workItem from="1586948635128" duration="125000" />
+      <workItem from="1587042762420" duration="5404000" />
     </task>
     <servers />
   </component>
@@ -82,30 +106,34 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="768" y="265" width="539" height="605" key="#com.intellij.ide.util.MemberChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1586720791043" />
-    <state x="728" y="281" width="453" height="552" key="FileChooserDialogImpl" timestamp="1586720058626">
+    <state x="533" y="149" width="844" height="816" key="CommitChangelistDialog2" timestamp="1587048205826">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="728" y="281" width="453" height="552" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1586720058626" />
-    <state width="1874" height="275" key="GridCell.Tab.0.bottom" timestamp="1586723579102">
+    <state x="533" y="149" width="844" height="816" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1587048205826" />
+    <state x="728" y="281" width="453" height="552" key="FileChooserDialogImpl" timestamp="1586948766295">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="275" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1586723579102" />
-    <state width="1874" height="275" key="GridCell.Tab.0.center" timestamp="1586723579102">
+    <state x="728" y="281" width="453" height="552" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1586948766295" />
+    <state width="1874" height="275" key="GridCell.Tab.0.bottom" timestamp="1587047722646">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="275" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1586723579102" />
-    <state width="1874" height="275" key="GridCell.Tab.0.left" timestamp="1586723579101">
+    <state width="1874" height="275" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1587047722646" />
+    <state width="1874" height="275" key="GridCell.Tab.0.center" timestamp="1587047722645">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="275" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1586723579101" />
-    <state width="1874" height="275" key="GridCell.Tab.0.right" timestamp="1586723579102">
+    <state width="1874" height="275" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1587047722645" />
+    <state width="1874" height="275" key="GridCell.Tab.0.left" timestamp="1587047722644">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="275" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1586723579102" />
-    <state x="620" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1586703418079">
+    <state width="1874" height="275" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1587047722644" />
+    <state width="1874" height="275" key="GridCell.Tab.0.right" timestamp="1587047722645">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="620" y="381" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1586703418079" />
+    <state width="1874" height="275" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1587047722645" />
+    <state x="620" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1586948644958">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="620" y="381" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1586948644958" />
     <state x="624" y="252" key="run.anything.popup" timestamp="1586608302868">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>

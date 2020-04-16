@@ -14,6 +14,9 @@ public class HashMapWrapper implements CollectionWrapper {
         createDate = new Date();
     }
     public String printAdmins(){
+        if(groupMap.size() == 0){
+            return "админов нет";
+        }
         Set<Long> keySet = groupMap.keySet();
         List<Person> adminList = new ArrayList<>();
         for(Long n : keySet){
@@ -34,6 +37,15 @@ public class HashMapWrapper implements CollectionWrapper {
 
     }
     public String removeLowerKey(Long l){
+        Long buffer = 0L;
+        for(Long i : groupMap.keySet()){
+            if ( i < l){
+                buffer++;
+            }
+        }
+        if ( buffer == 0){
+            return "нету id ниже заданого";
+        }
         groupMap.keySet().removeIf(x -> groupMap.get(x).getId() < l);
         return "Удаление прошло успешно";
     }
@@ -53,6 +65,9 @@ public class HashMapWrapper implements CollectionWrapper {
 
     @Override
     public String removeElement(long id) {
+        if (groupMap.get(id) == null){
+            return "элемента с таким айди не существует";
+        }
         groupMap.remove(id);
         return "Элемент успешно удален!";
 
@@ -60,8 +75,8 @@ public class HashMapWrapper implements CollectionWrapper {
 
     @Override
     public String info() {
-        return "Тип коллекции: HashMap" +
-                "Дата создания: " + createDate +
+        return "\n" + "Тип коллекции: HashMap" + "\n"+
+                "Дата создания: " + createDate + "\n" +
                 "Количество элементов: " + groupMap.size();
     }
 

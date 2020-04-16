@@ -55,11 +55,6 @@ public class FileManager implements IOInterface {
             System.out.println("Произошла непредвиденная ошибка! Запись в файла не была произведена");
         }
     }
-//        while (true) {
-//            Result r = new Result();
-//            cu.executeCommand(new Scanner(System.in).nextLine(), r);
-//            System.out.println(r.checkResult());
-//        }
     public void read(Result resultShell) {
         try {
             scanner = new Scanner(saveFile);

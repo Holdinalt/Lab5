@@ -33,10 +33,9 @@ public class ExecuteScriptCommand implements Command {
                     continue;
                 }
                 check = Arrays.asList(newxtLine.split(" "));
-                System.out.println(check);
                 if(check.get(0).equals("insert")){
-                    String buffer = sc.nextLine()+ " " + sc.nextLine() +" "+ sc.nextLine() +" "+ sc.nextLine()+" "+ sc.nextLine() +" "+ sc.nextLine() +" "+ sc.nextLine() +" "+ sc.nextLine() ;
-                    controlUnit.executeCommand("scr_add", buffer, result);
+                    String buffer = sc.nextLine()+ " " + sc.nextLine() +" "+ sc.nextLine() +" "+ sc.nextLine()+" "+ sc.nextLine() +" "+ sc.nextLine();
+                    controlUnit.executeCommand("script_add", buffer, result);
                     continue;
                 }
                 if(check.get(0).equals("execute_script")){
@@ -58,7 +57,7 @@ public class ExecuteScriptCommand implements Command {
             sc.close();
             ScriptPathChecker.clear();
         } catch (FileNotFoundException ex){
-            System.out.println("Файл не наеден");
+            System.out.println("Файл не найден");
         } catch (RecursionOnScriptException ex2){
             System.out.println("Скрипт прерван!");
         }

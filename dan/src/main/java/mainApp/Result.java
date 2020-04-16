@@ -6,9 +6,12 @@ public class Result {
         res = "";
     }
     public void writeResult(String s){
-        res += "\n" + s ;
+        res +=  s ;
     }
     public String checkResult(){
         return res;
+    }
+    public void  clear(){
+        res = "";
     }
 }

@@ -6,7 +6,7 @@ import mainApp.Result;
 public class LoadCommand implements Command {
     FileManager fileManager;
     public LoadCommand(ControlUnit cu , FileManager fileManager){
-        cu.addCommand("save",this);
+        cu.addCommand("load",this);
         this.fileManager = fileManager;
     }
     @Override

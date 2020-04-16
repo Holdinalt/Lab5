@@ -3,10 +3,7 @@ package factories;
 import exceptions.CreateObjectException;
 import sourseDate.*;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Random;
-import java.util.Scanner;
+import java.util.*;
 
 public class StudyGroupFactory {
     private Scanner scanner;
@@ -18,28 +15,65 @@ public class StudyGroupFactory {
     }
     public StudyGroup createStudyGroupWithParams (String params){
         List<String> para = Arrays.asList(params.split(" "));
+        System.out.println(para);
         StudyGroup studyGroup = new StudyGroup();
         studyGroup.setName(para.get(0));
         studyGroup.setShouldBeExpelled(Integer.parseInt(para.get(1)));
         studyGroup.setCoordinates(new Coordinates(Double.parseDouble(para.get(2)), Integer.parseInt(para.get(3))));
-//        studyGroup.setFormOfEducation((para.get(4));
-        studyGroup.setGroupAdmin(new Person(para.get(5),para.get(6)));
+//       studyGroup.setFormOfEducation((para.get(4)));
+        studyGroup.setGroupAdmin(new Person(para.get(4),para.get(5)));
 //        studyGroup.setSemesterEnum(para.get(7));
         studyGroup.setId(IdGenerator.getNewId());
         return studyGroup;
     }
     public StudyGroup createStudyGroup(){
         StudyGroup st = new StudyGroup();
-        System.out.println("Введите имя группы: ");
-        st.setName(scanner.nextLine());
-        System.out.println("Введите странный параметр: ");
-        st.setShouldBeExpelled(scanner.nextInt());
+        st.setName(createName());
+        st.setShouldBeExpelled(shouldBeExpelled());
         st.setCoordinates(createCoordinates());
         st.setFormOfEducation(createForm());
         st.setGroupAdmin(createPerson());
         st.setSemesterEnum(createSemester());
         st.setId(IdGenerator.getNewId());
         return st;
+    }
+    public int shouldBeExpelled(){
+        updateScanner();
+        System.out.println("Введите странный параметр: ");
+        int should;
+        while (true){
+            try {
+                should = scanner.nextInt();
+                if(should < 0){
+                    throw new CreateObjectException();
+                }
+                break;
+            } catch (CreateObjectException | InputMismatchException exception){
+                System.out.println("введен невеный формат , попробуйте снова");
+                updateScanner();
+            }
+
+        }
+        return should;
+
+    }
+    public String createName(){
+        updateScanner();
+        System.out.println("Введите имя группы: ");
+        String name = "";
+        while (true) {
+            try {
+                name = scanner.nextLine();
+                if (name.equals("")) {
+                    throw new CreateObjectException();
+                }
+                break;
+            } catch (CreateObjectException ex){
+                System.out.println("Имя не может быть пустым. Попробуйте снова");
+            }
+        }
+        return name;
+
     }
     public Coordinates createCoordinates(){
         updateScanner();
