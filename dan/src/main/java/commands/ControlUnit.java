@@ -36,7 +36,7 @@ public class ControlUnit {
                 commandMap.get(splitQuery.get(0)).execute(splitQuery.get(1), result);
                 saveHistory(splitQuery.get(0));
             } else {
-                result.writeResult("Команда состоит из двух частей. Имя и возможные аргумент. В вашем запросе превышено количество элементоа в запросе");
+                result.writeResult("Команда состоит из двух частей. Имя и возможные аргументы.");
             }
         } catch (NullPointerException ex){
             result.writeResult("Такой команды не существует");

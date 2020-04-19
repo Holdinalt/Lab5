@@ -6,7 +6,7 @@ public class Result {
         res = "";
     }
     public void writeResult(String s){
-        res +=  s ;
+        res +=  s + "\n" ;
     }
     public String checkResult(){
         return res;

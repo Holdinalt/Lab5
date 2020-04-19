@@ -5,6 +5,7 @@ import commands.*;
 import factories.IdGenerator;
 import factories.StudyGroupFactory;
 import fileWorker.FileManager;
+import sourseDate.Semester;
 import sourseDate.StudyGroup;
 
 import java.io.*;
@@ -17,16 +18,21 @@ public class App {
         ControlUnit cu = new ControlUnit();
         IdGenerator idGenerator = new IdGenerator();
         HashMapWrapper hashMapWrapper = new HashMapWrapper();
-        FileManager fl = new FileManager(hashMapWrapper,"SaveFile");
+        FileManager fl = new FileManager(hashMapWrapper, "SaveFile");
         CommandLoader commandLoader = new CommandLoader(cu,hashMapWrapper,fl);
         Result result = new Result();
         System.out.println("Добро пожаловать!  Введите команду");
         while (true) {
             System.out.print("> ");
             result.clear();
-            cu.executeCommand(new Scanner(System.in).nextLine(), result);
+            String request = new Scanner(System.in).nextLine();
+            if(request.equals("")){
+                continue;
+            }
+            cu.executeCommand(request, result);
             System.out.println(result.checkResult());
         }
+
 
     }
 }

@@ -22,12 +22,7 @@ public class HashMapWrapper implements CollectionWrapper {
         for(Long n : keySet){
             adminList.add(groupMap.get(n).getGroupAdmin());
         }
-        Collections.sort(adminList, new Comparator<Person>() {
-            @Override
-            public int compare(Person person, Person t1) {
-                return person.getPassportID().compareTo(t1.getPassportID());
-            }
-        });
+        adminList.sort(Comparator.comparing(Person::getPassportID));
         return adminList.toString();
 
     }
@@ -37,7 +32,7 @@ public class HashMapWrapper implements CollectionWrapper {
 
     }
     public String removeLowerKey(Long l){
-        Long buffer = 0L;
+        long buffer = 0L;
         for(Long i : groupMap.keySet()){
             if ( i < l){
                 buffer++;
@@ -98,6 +93,7 @@ public class HashMapWrapper implements CollectionWrapper {
         if(groupMap.get(id) == null){
             return "По данному адресу нет элемента , запись не будет произведена";
         }
+        st.setId(id);
         groupMap.replace(id, st);
         return "Объект: " + st.getName() + " теперь хранится по адресу "+ id;
     }

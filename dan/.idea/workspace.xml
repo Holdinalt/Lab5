@@ -2,23 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c52732ca-54e8-4b9b-a3c9-70641b4119fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/mainApp/CommandLoader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdFile" beforeDir="false" afterPath="$PROJECT_DIR$/IdFile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SaveFile" beforeDir="false" afterPath="$PROJECT_DIR$/SaveFile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Script" beforeDir="false" afterPath="$PROJECT_DIR$/Script" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/collectionWorker/HashMapWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/collectionWorker/HashMapWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commands/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/Command.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/commands/ControlUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/ControlUnit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/commands/ExecuteScriptCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/ExecuteScriptCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commands/LoadCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/LoadCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commands/RemoveAllByCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/RemoveAllByCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commands/RemoveCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/RemoveCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commands/RemoveLowerKeyCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/RemoveLowerKeyCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commands/ScriptAddCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/ScriptAddCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commands/InsertCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/InsertCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/factories/StudyGroupFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factories/StudyGroupFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fileWorker/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fileWorker/FileManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mainApp/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainApp/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mainApp/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainApp/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sourseDate/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sourseDate/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/collectionWorker/HashMapWrapper$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/collectionWorker/HashMapWrapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/collectionWorker/HashMapWrapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/commands/ControlUnit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/commands/ControlUnit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/commands/ExecuteScriptCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/commands/ExecuteScriptCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/commands/InsertCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/commands/InsertCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/commands/LoadCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/commands/LoadCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/commands/RemoveAllByCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/commands/RemoveAllByCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/commands/RemoveCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/commands/RemoveCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/commands/RemoveLowerKeyCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/commands/RemoveLowerKeyCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/commands/ScriptAddCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/commands/ScriptAddCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/factories/StudyGroupFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/factories/StudyGroupFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fileWorker/FileManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fileWorker/FileManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mainApp/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mainApp/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mainApp/Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mainApp/Result.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,12 +100,28 @@
       <workItem from="1586606583231" duration="3016000" />
       <workItem from="1586703408069" duration="20145000" />
       <workItem from="1586948635128" duration="125000" />
-      <workItem from="1587042762420" duration="5404000" />
+      <workItem from="1587042762420" duration="5469000" />
+      <workItem from="1587054169257" duration="33000" />
+      <workItem from="1587206167945" duration="4880000" />
+      <workItem from="1587256396724" duration="590000" />
+      <workItem from="1587308518476" duration="2660000" />
     </task>
+    <task id="LOCAL-00001" summary="Исправлены баги команд. Обновлена работа некоторых команд">
+      <created>1587048207520</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587048207520</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Исправлены баги команд. Обновлена работа некоторых команд" />
+    <option name="LAST_COMMIT_MESSAGE" value="Исправлены баги команд. Обновлена работа некоторых команд" />
   </component>
   <component name="WindowStateProjectService">
     <state x="658" y="358" width="594" height="398" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586722954647">
@@ -110,30 +136,30 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="533" y="149" width="844" height="816" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1587048205826" />
-    <state x="728" y="281" width="453" height="552" key="FileChooserDialogImpl" timestamp="1586948766295">
+    <state x="728" y="281" width="453" height="552" key="FileChooserDialogImpl" timestamp="1587054242170">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="728" y="281" width="453" height="552" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1586948766295" />
-    <state width="1874" height="275" key="GridCell.Tab.0.bottom" timestamp="1587047722646">
+    <state x="728" y="281" width="453" height="552" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1587054242170" />
+    <state width="1874" height="275" key="GridCell.Tab.0.bottom" timestamp="1587311210662">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="275" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1587047722646" />
-    <state width="1874" height="275" key="GridCell.Tab.0.center" timestamp="1587047722645">
+    <state width="1874" height="275" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1587311210662" />
+    <state width="1874" height="275" key="GridCell.Tab.0.center" timestamp="1587311210661">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="275" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1587047722645" />
-    <state width="1874" height="275" key="GridCell.Tab.0.left" timestamp="1587047722644">
+    <state width="1874" height="275" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1587311210661" />
+    <state width="1874" height="275" key="GridCell.Tab.0.left" timestamp="1587311210661">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="275" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1587047722644" />
-    <state width="1874" height="275" key="GridCell.Tab.0.right" timestamp="1587047722645">
+    <state width="1874" height="275" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1587311210661" />
+    <state width="1874" height="275" key="GridCell.Tab.0.right" timestamp="1587311210661">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="275" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1587047722645" />
-    <state x="620" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1586948644958">
+    <state width="1874" height="275" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1587311210661" />
+    <state x="620" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1587308518466">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="620" y="381" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1586948644958" />
+    <state x="620" y="381" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1587308518466" />
     <state x="624" y="252" key="run.anything.popup" timestamp="1586608302868">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>

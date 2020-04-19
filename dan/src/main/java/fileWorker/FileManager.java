@@ -21,17 +21,17 @@ public class FileManager implements IOInterface {
     private Gson jsoner;
     private List<String> jsonList;
     private Scanner scanner;
-    public FileManager(CollectionWrapper c,String fileAddress) { //TODO добавить в параметры путь к файлу айди
+    public FileManager(CollectionWrapper c,String fileAddress) {
         colletionWorker = c;
         jsonList = new ArrayList<>();
         jsoner = new Gson();
         saveFile = new File(fileAddress);
 
     }
-    public void write(Result resultShell){ //TODO нормально обработать исключения
+    public void write(Result resultShell){
         try {
             if(colletionWorker.isEmpty()){
-                resultShell.writeResult("Коллекция пуста запись не удет произведена");
+                resultShell.writeResult("Коллекция пуста. запись не будет произведена");
                 return;
             }
             bufferedWriter = new BufferedWriter(new FileWriter(saveFile));

@@ -14,15 +14,23 @@ public class StudyGroupFactory {
         scanner = new Scanner(System.in);
     }
     public StudyGroup createStudyGroupWithParams (String params){
-        List<String> para = Arrays.asList(params.split(" "));
-        System.out.println(para);
+        List<String> para = Arrays.asList(params.split("-"));
+        para.removeIf(x -> x.equals(" "));
         StudyGroup studyGroup = new StudyGroup();
         studyGroup.setName(para.get(0));
         studyGroup.setShouldBeExpelled(Integer.parseInt(para.get(1)));
         studyGroup.setCoordinates(new Coordinates(Double.parseDouble(para.get(2)), Integer.parseInt(para.get(3))));
-//       studyGroup.setFormOfEducation((para.get(4)));
-        studyGroup.setGroupAdmin(new Person(para.get(4),para.get(5)));
-//        studyGroup.setSemesterEnum(para.get(7));
+        if (para.get(4).equals("empty")){
+            studyGroup.setFormOfEducation(null);
+        } else {
+            studyGroup.setFormOfEducation(FormOfEducation.valueOf(para.get(4)));
+        }
+        studyGroup.setGroupAdmin(new Person(para.get(5),para.get(6)));
+        if (para.get(7).equals("empty")){
+            studyGroup.setSemesterEnum(null);
+        } else {
+            studyGroup.setSemesterEnum(Semester.valueOf(para.get(7)));
+        }
         studyGroup.setId(IdGenerator.getNewId());
         return studyGroup;
     }
@@ -131,6 +139,12 @@ public class StudyGroupFactory {
             case "EVENING_CLASSES": return FormOfEducation.EVENING_CLASSES;
             default: return null;
         }
+    }
+    public FormOfEducation createFormWithOpt(String s){
+        if(s == null){
+            return null;
+        }
+        return FormOfEducation.valueOf(s);
     }
     public Semester createSemester(){
         System.out.println("выберите 1 из предложенных варинтов:   \n FIRST,\n" +

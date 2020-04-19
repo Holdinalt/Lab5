@@ -4,6 +4,9 @@ import collectionWorker.HashMapWrapper;
 import factories.StudyGroupFactory;
 import mainApp.Result;
 import sourseDate.StudyGroup;
+/*
+
+ */
 
 public class InsertCommand implements Command {
     private HashMapWrapper hashMapWrapper;
@@ -18,6 +21,6 @@ public class InsertCommand implements Command {
             return;
         }
         hashMapWrapper.addElement(new StudyGroupFactory().createStudyGroup());
-        result.writeResult("Объект успешно добавлен в коллекцию!");
+        result.writeResult("Объект успешно добавлен  в коллекцию!");
     }
 }
