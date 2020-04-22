@@ -2,7 +2,9 @@ package commands;
 
 import collectionWorker.HashMapWrapper;
 import mainApp.Result;
-
+/*
+    команда для очистики коллекции
+ */
 public class ClearCommand implements Command {
     private HashMapWrapper mainColl;
     public ClearCommand(ControlUnit cu, HashMapWrapper hashMapWrapper){

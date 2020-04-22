@@ -2,7 +2,9 @@ package commands;
 
 import collectionWorker.HashMapWrapper;
 import mainApp.Result;
-
+/*
+    удаляет что-то из коллекции по определенному критерию
+ */
 public class RemoveAllByCommand implements Command {
     private HashMapWrapper hashMapWrapper;
     public RemoveAllByCommand(ControlUnit cu, HashMapWrapper hashMapWrapper){

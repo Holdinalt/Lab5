@@ -1,7 +1,9 @@
 package commands;
 
 import mainApp.Result;
-
+/*
+    насильно завершает работу программы
+ */
 public class ExitCommand implements Command{
     public ExitCommand(ControlUnit cu){
         cu.addCommand("exit", this);

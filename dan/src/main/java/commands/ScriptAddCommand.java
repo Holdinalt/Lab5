@@ -3,7 +3,9 @@ package commands;
 import collectionWorker.HashMapWrapper;
 import factories.StudyGroupFactory;
 import mainApp.Result;
-
+/*
+    черная магия скрипта
+ */
 public class ScriptAddCommand implements Command {
     private HashMapWrapper hashMapWrapper;
     public ScriptAddCommand(ControlUnit cu, HashMapWrapper hmw){

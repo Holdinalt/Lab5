@@ -2,7 +2,9 @@ package commands;
 
 import fileWorker.FileManager;
 import mainApp.Result;
-
+/*
+    вызывает метод для сохранения всей коллекции в сериализованном виде в файл
+ */
 public class LoadCommand implements Command {
     FileManager fileManager;
     public LoadCommand(ControlUnit cu , FileManager fileManager){

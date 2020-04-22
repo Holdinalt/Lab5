@@ -1,7 +1,9 @@
 package commands;
 
 import mainApp.Result;
-
+/*
+    выводит скудную инфомарцию о командах...
+ */
 public class HelpCommand implements Command {
     public HelpCommand(ControlUnit cu){
         cu.addCommand("help", this);

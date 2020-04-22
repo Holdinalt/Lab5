@@ -3,7 +3,11 @@ package commands;
 import mainApp.Result;
 
 import java.util.*;
-
+/*
+    Класс , отвечающий за вызов команд и помещение вызванных команд в историю
+    уменнт добалвять новые команды. Сами же команды автоматически добавляются в коллекцию
+    при создании. Существует защита от несущетсвующих команд
+ */
 public class ControlUnit {
     private Map<String,Command> commandMap;
     private List<String> history;

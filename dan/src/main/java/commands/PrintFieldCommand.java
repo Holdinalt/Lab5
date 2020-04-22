@@ -2,7 +2,9 @@ package commands;
 
 import collectionWorker.HashMapWrapper;
 import mainApp.Result;
-
+/*
+    выводит информацию о админах группы и соритрует по какому-то критерию
+ */
 public class PrintFieldCommand implements Command {
     private HashMapWrapper hashMapWrapper;
     public PrintFieldCommand(ControlUnit cu, HashMapWrapper hm){

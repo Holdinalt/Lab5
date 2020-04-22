@@ -2,7 +2,9 @@ package commands;
 
 import collectionWorker.HashMapWrapper;
 import mainApp.Result;
-
+/*
+    удаляет элемент из коллекции по его ID
+ */
 public class RemoveCommand implements Command {
     HashMapWrapper hashMapWrapper ;
     public RemoveCommand(ControlUnit cu, HashMapWrapper hw){

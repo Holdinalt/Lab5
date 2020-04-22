@@ -4,7 +4,9 @@ import collectionWorker.HashMapWrapper;
 import factories.StudyGroupFactory;
 import mainApp.Result;
 import sourseDate.StudyGroup;
-
+/*
+    обновляет элемент по заданному айди
+ */
 public class UpdateCommand implements Command {
     private HashMapWrapper hashMapWrapper;
     public UpdateCommand(ControlUnit cu , HashMapWrapper ha){

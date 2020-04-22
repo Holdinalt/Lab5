@@ -12,7 +12,10 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
-
+/*
+    класс , который работает с файлом
+    умент сохранять и загружать
+ */
 public class FileManager implements IOInterface {
     private File saveFile;
     private CollectionWrapper colletionWorker;

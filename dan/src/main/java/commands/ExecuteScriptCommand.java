@@ -7,7 +7,9 @@ import mainApp.Result;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
-
+/*
+    фуу...
+ */
 public class ExecuteScriptCommand implements Command {
     private ControlUnit controlUnit;
     private Scanner sc;
@@ -73,7 +75,7 @@ public class ExecuteScriptCommand implements Command {
         } catch (FileNotFoundException ex){
             System.out.println("Файл не найден");
         } catch (RecursionOnScriptException ex2){
-            System.out.println("Скрипт прерван!");
+            System.out.println("Скрипт прерван рекурсии");
         }
         catch (Exception e){
             System.out.println("Ошибка в строке: "+currLine );

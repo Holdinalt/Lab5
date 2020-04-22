@@ -3,7 +3,10 @@ package factories;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
-
+/*
+    айдигенератор имеет отдельный файл где хранит значение текущего айди
+    при загрузки команды айдигенератор загужает последний использованный айди
+ */
 public class IdGenerator {
     private static File file;
     private static long id;

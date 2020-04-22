@@ -2,7 +2,9 @@ package commands;
 
 import collectionWorker.HashMapWrapper;
 import mainApp.Result;
-
+/*
+    команда, которая выводит информацию о коллекции
+ */
 public class InfoCommand implements Command {
     private HashMapWrapper hashMapWrapper;
     public InfoCommand(ControlUnit controlUnit, HashMapWrapper hm){

@@ -4,7 +4,9 @@ import exceptions.CreateObjectException;
 import sourseDate.*;
 
 import java.util.*;
-
+/*
+    фуу..
+ */
 public class StudyGroupFactory {
     private Scanner scanner;
     public StudyGroupFactory(){

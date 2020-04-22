@@ -2,7 +2,9 @@ package commands;
 
 import collectionWorker.HashMapWrapper;
 import mainApp.Result;
-
+/*
+    выводит все элементы коллекции
+ */
 public class ShowCommand implements Command {
     public HashMapWrapper hashMapWrapper;
     public ShowCommand(ControlUnit controlUnit, HashMapWrapper hashMapWrapper){

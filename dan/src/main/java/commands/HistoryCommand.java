@@ -1,7 +1,9 @@
 package commands;
 
 import mainApp.Result;
-
+/*
+    выводит информацию о последних выполненных командах
+ */
 public class HistoryCommand implements Command {
     ControlUnit cu;
     public HistoryCommand(ControlUnit controlUnit){

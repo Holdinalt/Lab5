@@ -5,7 +5,7 @@ import factories.StudyGroupFactory;
 import mainApp.Result;
 import sourseDate.StudyGroup;
 /*
-
+    Добавляет новый элемент в коллекцию с помощью фабрики
  */
 
 public class InsertCommand implements Command {

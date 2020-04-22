@@ -5,7 +5,9 @@ import sourseDate.StudyGroup;
 
 import java.util.*;
 import java.util.stream.Collectors;
-
+/*
+     Реализация интерфейса для Map.Содержит классические методы для каждого контейнера+ особые методы для мапы
+ */
 public class HashMapWrapper implements CollectionWrapper {
     private Map<Long,StudyGroup> groupMap;
     private Date createDate;

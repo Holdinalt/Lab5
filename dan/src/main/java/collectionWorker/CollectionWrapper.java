@@ -3,7 +3,9 @@ package collectionWorker;
 import sourseDate.StudyGroup;
 
 import java.util.Iterator;
-
+/*
+Общий интерфейс для оберток над коллекциями. В последствии можно заменить одну коллекцию на другую без переписиогромного количества кода
+ */
 public interface CollectionWrapper {
     String addElement(StudyGroup st);
     String removeElement(long id);

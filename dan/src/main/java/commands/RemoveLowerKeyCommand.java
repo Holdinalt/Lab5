@@ -2,7 +2,9 @@ package commands;
 
 import collectionWorker.HashMapWrapper;
 import mainApp.Result;
-
+/*
+    удаляет все элементы из коллекции , коюч которых ниже заданного
+ */
 public class RemoveLowerKeyCommand implements Command {
     private HashMapWrapper hashMapWrapper ;
     public RemoveLowerKeyCommand(ControlUnit cu, HashMapWrapper hashMapWrapper){

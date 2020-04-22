@@ -2,7 +2,9 @@ package commands;
 
 import fileWorker.FileManager;
 import mainApp.Result;
-
+/*
+    сохраняет коллекцию в файл
+ */
 public class SaveCommand implements Command {
     FileManager fileManager;
     public SaveCommand(ControlUnit cu , FileManager fileManager){
